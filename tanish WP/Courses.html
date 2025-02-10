@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Courses </title>
+<style>
+           body {
+           background-image:url("Backround.jpg");
+            background-color:  #f3f3f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            }
+            header {
+            background-color:  #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            }
+          nav
+            {
+            background-color: #333;
+            overflow: hidden;
+             }
+        nav a  
+             {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            }
+        nav a:hover
+            {
+            background-color: #000000;
+             }
+* {
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+        main
+           {
+            padding: 30px;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+.courses {
+            display: flex;
+            flex-wrap:wrap;
+            gap: 30px; /* Space between items */
+            justify-content: center; /* Center items */
+        }
+        .course {
+            background-color: #F6CEFC;
+            border: 5px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(33.333% - 40px); 
+            box-sizing: border-box;
+            text-align: center;
+            transition: box-shadow;
+        }
+        .course:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .course h3 {
+            margin-top: 0;
+        }
+        .course a {
+            display: inline-block;
+            margin-top: 5px;
+            color: #9F2B68; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .course a:hover {
+            text-decoration: underline;
+            text-decoration-color: purple;
+        }
+      footer
+ {
+            background-color: #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+</style>
+</head>
+<body>
+<header>
+    <h1>CRYJUS - The Learning App</h1>
+    <nav>
+        <a href="Index Home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="user.html">User</a>
+        <a href="Galmof.html">Faculty Profiles</a>
+        <a href="About us.html">About us</a>
+        <a href="feedback.html">Feedbacks</a>
+    </nav>
+</header>
+ <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="courses">
+            <div class="course"> 
+
+                <h3>Mathematics</h3>  
+                <p>Algebra<br>Gometry<br>Calculus<br>Statistics<br>Descriptive Statistics<br>Numerical Method<br>.</p>
+                 <a href="https://en.wikipedia.org/wiki/Mathematics">Learn More</a>
+                </div> 
+
+            <div class="course">
+                <h3>Science</h3> 
+                <p>Physcics<br>Chemistry<br>Biology<br>Psychology<br>Environmental Scienece<br>Discrete Zoolgy<br>.</p>
+                <a href="https://en.wikipedia.org/wiki/Science">Learn More</a>
+            </div>
+            <div class="course">
+                <h3>Humanities</h3> 
+                <p>History<br>Philsophy<br>Psychology<br>Sociology<br>Anthropology<br>Artefacts learning<br>.</p>
+                <a href="https://en.wikipedia.org/wiki/Humanities#:~:text=The%20humanities%20include%20the%20studies,%2C%20filmmaking%2C%20etc.).">Learn More</a>
+            </div>
+          <div class="course">
+          <h3>Foreign Languages</h3>
+           <p>French<br>Spanish<br>Mandarin Chinese<br>German<br>Sign Language<br>Arabic<br></p>
+           <a href="https://en.wikipedia.org/wiki/Foreign_language">Learn More</a>
+         </div>
+          <div class="course">
+          <h3>Art&Music</h3>
+           <p>Drawing & Painting<br>Digital Art<br>Sculpture<br>Photography<br>Art History<br>Model Art<br></p>
+           <a href="https://en.wikipedia.org/wiki/Art_music">Learn More</a>
+         </div>
+        <div class="course">
+        <h3>Health Education</h3>
+        <p>Nutrition Welness<br>Physical fitness<br>Mental Health Awareness<br>Sex Education<br>Substance Abuse Prevention<br>Outdoor Education<br>
+        <a href="https://en.wikipedia.org/wiki/Health_education">Learn More</a>
+        </div>
+    </section>
+<footer>
+<p>&copy; 2024 CRYJUS - The Learning App. All rights reserved.</p>
+    <address>
+        19 Mumbai<br>
+        Bandra Art City<br>
+        Email: support@cryjus.com
+    </address>
+</footer>
+</body>
+</html>

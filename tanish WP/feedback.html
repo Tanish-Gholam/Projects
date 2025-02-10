@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRYJUS - The Learning App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            line-height: 1.6;
+            
+           background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+            color: white;
+        }
+	* {
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+        /* Container for the background image, video, and text overlay */
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        /* Aligning video and text overlay */
+        .media-container, .text-overlay {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        .media-container {
+            left: 5%;
+            width: 50%;
+        }
+
+        .media-container video {
+            width: 100%;
+            height: auto;
+            border: 3px solid purple;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-overlay {
+            right: 5%;
+            width: 40%;
+            text-align: left;
+        }
+
+        .text-overlay h1 {
+            font-size: 42px;
+            color: white;
+            margin: 0;
+        }
+
+        .text-overlay p {
+            font-size: 20px;
+            color: white;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+
+        /* Motivational Quotes */
+        .quote {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 24px;
+            color: #555;
+            font-style: italic;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Customer Insights Section */
+        .insights-section {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .insights-section h2 {
+            font-size: 30px;
+            color: #333;
+        }
+
+        .insights-section p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .insight {
+            margin: 20px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Student Reviews Section */
+        .reviews-section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        .reviews-section h2 {
+            text-align: center;
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .review {
+            background-color: white;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .review h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .review p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 15px;
+            
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CRYJUS - The Learning App</h1>
+    <nav>
+        <a href="Index Home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="user.html">User</a>
+        <a href="Galmodf.html">Faculty Profiles</a>
+        <a href="About us.html">About us</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<!-- Image with video and text overlay -->
+<div class="image-container">
+    <img src="feedback bg.png" alt="Background Image">
+    
+    <!-- Video section on top of the background -->
+    <div class="media-container">
+        <video controls autoplay loop>
+            <source src="Cryjus.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Text overlay -->
+    <div class="text-overlay">
+        <h1>Millions of Happy Students and Still Counting</h1>
+        <p>Every story here is a testimony to their wonderful<br>
+        learning journey with CRYJU'S - The Learning App.</p>
+    </div>
+</div>
+
+<!-- Motivational Quote Section -->
+<div class="quote">
+    "Education is the most powerful weapon which you can use to change the world." – Nelson Mandela
+</div>
+
+<!-- Customer Insights Section -->
+<div class="insights-section">
+    <h2>Why Choose CRYJUS?</h2>
+    <p>At CRYJUS, we believe in creating lifelong learners through flexible, accessible, and engaging courses.</p>
+
+    <div class="insight">
+        <h3>Flexible Learning</h3>
+        <p>Our courses are designed to fit your schedule. Learn at your own pace, anytime and anywhere.</p>
+    </div>
+
+    <div class="insight">
+        <h3>Expert Instructors</h3>
+        <p>With a team of experienced educators, CRYJUS ensures high-quality learning, led by industry experts.</p>
+    </div>
+
+    <div class="insight">
+        <h3>Community of Learners</h3>
+        <p>Join millions of students worldwide and be part of an active learning community. Share experiences, grow together.</p>
+    </div>
+</div>
+
+<!-- Student Reviews Section -->
+<div class="reviews-section">
+    <h2>What Our Students Say</h2>
+
+    <div class="review">
+        <h3>Meet Korpe</h3>
+        <p>"CRYJUS has changed the way I learn. The courses are well-structured, and the teachers are so supportive!"</p>
+        <div class="stars">★★★★★</div>
+    </div>
+
+    <div class="review">
+        <h3>Nihar Dhargalkar</h3>
+        <p>"I’ve tried other platforms, but CRYJUS offers a unique, immersive learning experience. I love it!"</p>
+        <div class="stars">★★★★☆</div>
+    </div>
+
+    <div class="review">
+        <h3>Rohan Gonbare</h3>
+        <p>"The best part of CRYJUS is the flexibility. I can learn at my own pace, anytime, anywhere."</p>
+        <div class="stars">★★★★★</div>
+    </div>
+</div>
+
+<!-- Motivational Quote Section -->
+<div class="quote">
+    "Learning is not attained by chance, it must be sought for with ardor and diligence." – Abigail Adams
+</div>
+
+<footer>
+    <p>&copy; 2024 CRYJUS - The Learning App. All rights reserved.</p>
+    <address>
+        19 Mumbai<br>
+        Bandra Art City<br>
+        Email: support@cryjus.com
+    </address>
+</footer>
+
+</body>
+</html>
+

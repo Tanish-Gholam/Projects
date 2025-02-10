@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRYJUS - The Learning App</title>
+    <style>
+        body {
+            background-image: url("Backround.jpg");
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color:#ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+ * {
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 100px;
+        }
+
+        /* Fix Gallery Styling with Flexbox */
+        .gallery-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the gallery items */
+            gap: 20px; /* Add space between gallery items */
+        }
+
+        .gallery {
+            border: none;
+            width: 220px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            flex-grow: 1; /* Ensures flexible box sizes */
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .desc {
+            padding: 16px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #fff;
+        }
+
+        /* Clear Floats and Fix Footer Overlap */
+        footer {
+            background-color: #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+            clear: both;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery-section {
+                justify-content: space-around; /* Adjust spacing for smaller screens */
+            }
+
+            .gallery {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-section {
+                flex-direction: row; /* Stack gallery items vertically on small screens */
+                align-items: center;
+            }
+
+            .gallery {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CRYJUS - The Learning App</h1>
+    <nav>
+        <a href="Index Home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="user.html">User</a>
+        <a href="Galmodf.html">Faculty Profiles</a>
+        <a href="About us.html">About us</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+<section class="gallery-section">
+        
+
+      <div class="gallery">
+            <a target="_blank" href="Teacher5.jpg">
+                <img src="Teacher5.jpg" alt="Teacher5.jpg">
+            </a>
+            <div class="desc"><h1>Mathematics</h1>
+             <h3>Dr. Alakh Pandey</h3>
+             Ph.D. in Mathematics with expertise in Applied Mathematics and years of experience in advanced problem-solving and educational innovation.
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="Teacher 2.jpg">
+                <img src="Teacher 2.jpg" alt="C++">
+            </a>
+
+            <div class="desc"><h1>Science</h1>
+             <h3>Dr. Anjali Sharma</h3>
+              Ph.D. in Physics, specializing in Quantum Mechanics and Educational Research, with a passion for making complex concepts accessible to students.
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="Teacher 3.jpg">
+                <img src="Teacher 3.jpg" alt="DBMS">
+            </a>
+
+            <div class="desc"><h1>Foreign Languages</h1>
+           <h3>Mrs. Priya Rao</h3>
+            Master’s in Spanish Language and Literature, a certified bilingual instructor with 10+ years of experience teaching Spanish and French.
+            </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="Teacher 4.jpg">
+                <img src="Teacher 4.jpg" alt="Python">
+            </a>
+
+            <div class="desc"><h1>Science</h1>
+           <h3>Ms. Shreya Patel</h3>
+            Master’s in Music Education, trained classical vocalist, specializing in Indian and Western vocal techniques.
+            </div>
+        
+
+    
+
+
+
+
+       
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 CRYJUS - The Learning App. All rights reserved.</p>
+    <address>
+        19 Mumbai<br>
+        Bandra Art City<br>
+        Email: <a href="mailto:support@cryjus.com">support@cryjus.com</a>
+    </address>
+</footer>
+
+</body>
+</html>

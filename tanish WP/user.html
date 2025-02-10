@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile - CRYJUS</title>
+    <style>
+         body{
+            background-image:url("Backround.jpg");
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color:  #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+         * {
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+        nav a:hover {
+            background-color: #000000;
+        }
+        main {
+            padding: 30px;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #9F2B68;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="file"], select, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #9F2B68;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+        footer {
+            background-color: #9F2B68;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CRYJUS - The Learning App</h1>
+    <nav>
+        <a href="Index Home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="user.html">User</a>
+        <a href="Galmodf.html">Faculty Profiles</a>
+        <a href="About us.html">About us</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+</header>
+
+<main>
+    <h2>User Profile</h2>
+    <form>
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="guardian">Guardian Name:</label>
+        <input type="text" id="guardian" name="guardian" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="education">Standard/Education:</label>
+        <input type="text" id="education" name="education" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <label for="subscription">Subscription Pack:</label>
+        <select id="subscription" name="subscription" required>
+            <option value="3 Subject Pack(Mathematics,Science,Humanaties)">3subject/month</option>
+            <option value="4 Subject Pack(Foreign Language,Art&music,Healt Education,Humanaties)">4subject/month</option>
+            <option value="All Subject Pack(Foreign Language,Art&music,Health Education,Humanaties,Mathematics,Science,">All Subject/month</option>
+        </select>
+
+        <label for="subscription-info">Subscription Information:</label>
+        <textarea id="subscription-info" name="subscription-info" rows="4" placeholder="Enter any additional subscription details here..." required></textarea>
+
+        <input type="submit" value="Update Profile">
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2024 CRYJUS - The Learning App. All rights reserved.</p>
+    <address>
+        19 Mumbai<br>
+        Bandra Art City<br>
+        Email: support@cryjus.com
+    </address>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>CRYJUS - The Learning App</title>
+    <style>
+        body {
+           
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            line-height: 1.6;
+            background-color: #F8F0FF;
+        }
+
+        header {
+            background-color:#ac4da4;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #000000;
+            color: white;
+        }
+
+        .image-container{
+            max-width: 1550px;
+            position: absolute;
+            top: 70%;
+            left: 1%;
+            
+            width: 60%;
+            margin: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+            border-radius: 25px;
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 14px;
+            background-color: white;
+            position: relative;
+            width: 35%;
+            left:60%;
+            margin-top:200px;
+        }
+
+        /* Slideshow styling */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+            width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.4;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive form container */
+        .container {
+            padding: 14px;
+            background-color: white;
+            width: 35%;
+            position: relative;
+            left: 60%;
+            margin-top: 42px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type=text], input[type=password], input[type=tel] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+            border-radius: 4px;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        hr {
+            border: 0.5px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        footer {
+            background-color: #ac4da4;
+            color: white;
+            text-align: center;
+            padding: 0.5em 15px;
+            margin-top: 80px;
+        }
+
+        address {
+            margin-top: 10px;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+                left: 10%;
+                margin-top: 50px;
+            }
+
+            nav a {
+                float: none;
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            .slideshow-container {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                left: 5%;
+                margin-top: 30px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .prev, .next {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CRYJUS - The Learning App</h1>
+    <nav>
+        <a href="Index Home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+        <a href="user.html">User</a>
+        <a href="Galmodf.html">Faculty Profiles</a>
+        <a href="About us.html">About us</a>
+        <a href="feedback.html">Feedbacks</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="CRYJUS SLDTEMP 1.png" alt="Slide 1">
+            <div class="text">CRYJUS THE LEARNING APP</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="CRYJUS SLDTEMP 2.png" alt="Slide 2">
+            <div class="text">CRYJUS THE LEARNING APP</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="CRYJUS SLDTEMP 3.png" alt="Slide 3">
+            <div class="text">CRYJUS THE LEARNING APP</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+     <div class="image-container">
+        <img src="Cryjus Homepage.png" alt="CRYJUS HOMEPAGE">
+    </div>
+
+    <!-- Registration Form -->
+    <div class="container" id="formContainer">
+        <h1>Book Your Free Session</h1>
+        <p>Learn From India's Best Teacher.</p>
+        <hr>
+
+        <form action="your_backend_url" method="post">
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="Name" id="Name" required>
+
+            <label for="Mobile"><b>Mobile Number</b></label>
+            <input type="tel" placeholder="Enter Mobile Number" name="Mobile" id="Mobile" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">Register</button>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 CRYJUS - The Learning App. All rights reserved.</p>
+    <address>
+        19 Mumbai<br>
+        Bandra Art City<br>
+        Email: support@cryjus.com
+    </address>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+</script>
+
+</body>
+</html>
+
